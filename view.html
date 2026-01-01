@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Bookings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Booked Tickets</h2>
+
+<table id="bookingTable">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Train</th>
+        <th>From</th>
+        <th>To</th>
+    </tr>
+</table>
+
+<script>
+    let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+    let table = document.getElementById("bookingTable");
+
+    bookings.forEach(b => {
+        let row = table.insertRow();
+        row.insertCell(0).innerText = b.name;
+        row.insertCell(1).innerText = b.age;
+        row.insertCell(2).innerText = b.train;
+        row.insertCell(3).innerText = b.source;
+        row.insertCell(4).innerText = b.destination;
+    });
+</script>
+
+</body>
+</html>
