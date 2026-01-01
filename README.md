@@ -40,20 +40,6 @@ SQL- Database design reference
 ---
 
 ##  Project Structure
-railway-management-system/
-│
-├── index.html # Home page
-├── login.html # User login page
-├── booking.html # Ticket booking page
-│
-├── css/
-│ └── style.css # Application styles
-│
-├── js/
-│ └── script.js # JavaScript logic
-│
-├── database/
-│ └── railway.sql # Database schema (optional)
-│
-└── README.md # Project documentation
+<img width="442" height="559" alt="image" src="https://github.com/user-attachments/assets/8cce4b22-7ffe-4a0a-8a90-6dcf71b63244" />
+
 
